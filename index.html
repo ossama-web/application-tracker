@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ausbildung Application Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🧾 Ausbildungs Application Tracker</h1>
+    <form id="appForm">
+      <input type="text" id="company" placeholder="Company Name" required />
+      <input type="text" id="position" placeholder="Position" required />
+      <input type="date" id="date" required />
+      <select id="status">
+        <option>Waiting</option>
+        <option>Accepted</option>
+        <option>Rejected</option>
+      </select>
+      <button type="submit">Add Application</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Position</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="appList"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
